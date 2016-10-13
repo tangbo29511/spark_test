@@ -39,7 +39,7 @@ public class JavaRabbitMqReceiver {
 	private static final ObjectMapper objectMapper = new ObjectMapper();
 
 	public static void main(String[] args) throws InterruptedException, IOException, TimeoutException, NoSuchAlgorithmException, KeyManagementException, URISyntaxException {
-		SparkConf sparkConf = new SparkConf().setAppName("JavaRabbitMq").setMaster("local[20]");
+		SparkConf sparkConf = new SparkConf().setAppName("JavaRabbitMq")/*.setMaster("local[20]")*/;
 
 		JavaStreamingContext ssc = new JavaStreamingContext(sparkConf, Durations.seconds(60));
 

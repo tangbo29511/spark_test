@@ -10,6 +10,7 @@
 
     <properties>
         <spark.version>1.5.2</spark.version>
+        <hbase.version>1.2.2</hbase.version>
     </properties>
 
     <dependencies>
@@ -33,6 +34,28 @@
             <artifactId>spark-streaming_2.11</artifactId>
             <version>${spark.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-common</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-server</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>com.stratio.receiver</groupId>
             <artifactId>spark-rabbitmq_1.6</artifactId>
